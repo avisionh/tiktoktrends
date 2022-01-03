@@ -5,7 +5,7 @@ from TikTokApi import TikTokApi
 api = TikTokApi.get_instance()
 
 # number of trending TikToks to display
-N_RESULTS = 10
+N_RESULTS = 1000
 
 # get list of dictionaries of trending objects
 trending = api.by_trending(count=N_RESULTS)
@@ -17,3 +17,6 @@ print(len(trending))
 
 # look at first trending
 trending[3]
+
+## extract as json
+## get most trending videos at end of each UK day
